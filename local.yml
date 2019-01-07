@@ -1,6 +1,7 @@
 ---
-- name: install the latest version of vim
-  
+- name: provision the host for NMS
+  hosts: localhost
+
   tasks:
   - name: install vim
     yum:
