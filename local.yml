@@ -1,6 +1,9 @@
 ---
 - name: install the latest version of vim
-  yum:
-    name: vim
-    state: latest
+  
+  tasks:
+  - name: install vim
+    yum:
+      name: vim
+      state: latest
 
