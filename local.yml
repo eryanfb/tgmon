@@ -3,8 +3,7 @@
   hosts: localhost
 
   tasks:
-  - name: install vim
+  - name: install yum packages
     yum:
-      name: vim
+      name: vim, python
       state: latest
-
